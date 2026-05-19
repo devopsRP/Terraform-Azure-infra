@@ -31,7 +31,7 @@ resource "azurerm_virtual_network" "vnet_block" {
   # Location inherited from Resource Group
   location = azurerm_resource_group.rg_block.location
 
-  # CIDR block defining IP range for VNet
+  # CIDR block defining IP range for VNet (classless inter domain routing)
   address_space = ["10.0.0.0/16"]
 }
 
